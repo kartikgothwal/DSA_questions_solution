@@ -15,10 +15,7 @@ console.log(reverseArray([5,4,3,2,1]))
 
 function reverseArrayUsingRecursion(arr, n , c){
     if(c >= n) return arr;
-    [arr[n], arr[c]] =   [arr[c], arr[n]]
-    let temp = arr[n];
-    arr[n]= arr[c];
-    arr[c]= temp;
+    [arr[n], arr[c]] =   [arr[c], arr[n]];
     return reverseArrayUsingRecursion(arr,--n,++c)
 }
 let testarr = [5,4,3,2,1];

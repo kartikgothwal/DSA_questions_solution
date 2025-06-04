@@ -16,3 +16,23 @@ function pattern(n){
     }
 }
  pattern(5)
+
+
+function pattern2(n){
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+    for(let i = n; i >=1 ; i--){
+        let a = "";
+        for(let k = n; k > i; k--){
+            a+=" ";
+        }
+        for(let j =2*i-1 ; j >=1; j--){
+            a+="*"
+        }
+        console.log(a)
+    }
+}
+ pattern2(5)

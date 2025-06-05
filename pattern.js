@@ -58,3 +58,22 @@ function Pattern3(n){
     }
 }
 Pattern3(5)
+
+
+function Pattern4(n){
+// 1 
+// 0 1 
+// 1 0 1 
+// 0 1 0 1 
+// 1 0 1 0 1 
+    for(let i =0; i<=n; i++){
+        let prev = i % 2 == 0 ? 0 : 1;
+        let a = "";
+        for(let j = 1; j<=i; j++){
+            a += prev + " ";
+            prev = 1 - prev;
+        }
+        console.log(a)
+    }
+}
+Pattern4(5)

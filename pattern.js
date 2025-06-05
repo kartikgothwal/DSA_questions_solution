@@ -36,3 +36,25 @@ function pattern2(n){
     }
 }
  pattern2(5)
+
+
+function Pattern3(n){
+// *
+// **
+// ***
+// ****
+// *****
+// ****
+// ***
+// **
+// *
+    for(let i =0; i<n*2; i++){
+        let star = i>n ? 2*n-i : i;
+        let a = "";
+        for(let j = 1; j<= star; j++){
+            a+= "*"
+        }
+        console.log(a)
+    }
+}
+Pattern3(5)

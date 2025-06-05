@@ -77,3 +77,25 @@ function Pattern4(n){
     }
 }
 Pattern4(5)
+
+
+function Pattern5(n){
+// 1      1
+// 12    21
+// 123  321
+// 12344321
+    for(let i = 1; i<=n; i++){
+        let a = ""
+        for(let j = 1; j <= i; j++){
+             a+= j
+        }
+        for(let j = 1; j <=2*n -2*i; j++){
+            a+= " "
+        }
+        for(let j = i; j >= 1; j--){
+               a+= j
+        }
+            console.log(a)
+    }
+}
+Pattern5(4)

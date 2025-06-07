@@ -284,3 +284,23 @@ function pattern13(n){
     }
 }
 pattern13(5)
+
+function pattern14(n){
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+    for(let i = 1 ; i <= n ; i++){
+        let stars = ""
+       for(let j = 1 ; j<=n ; j++){
+           if(j==1 || j==n || i== 1 || i ==n){
+               stars += '*'
+           }else {
+               stars+=" "
+           }
+       }
+       console.log(stars)
+    }
+}
+pattern14(5)

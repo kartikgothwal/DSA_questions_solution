@@ -40,3 +40,4 @@ function freq(arr) {
   return temp;
 }
 console.log(freq([10, 5, 10, 15, 10]));
+
